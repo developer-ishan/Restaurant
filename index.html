@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        var x=0;
+        function show()
+        {
+            document.getElementById("pop-window").style.display="block";
+            document.getElementById("nav-btn").src="cross.png";
+            x=1;
+        }
+        function hide(){
+            document.getElementById("pop-window").style.display="none";
+            document.getElementById("nav-btn").src="popup.png";
+
+            x=0;
+        }
+        function change()
+        {
+            if(x==1)
+                hide();
+            else
+                show();
+        }
+    </script>
 </head>
 <body>
+<div>
+    <ul id="pop-window">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Our Menu</a></li>
+        <li><a href="">Reserve A Table</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</div>
 <div class="landing">
     <div class="header">
         <div></div>
         <div class="logo">M</div>
-        <div class="popup"><img src="popup.png"></div>
+        <div id="popup" onclick="change()"><img id="nav-btn" src="popup.png"></div>
     </div>
     <div class="message">
         <div class="welcome">Welcome to Meal</div>

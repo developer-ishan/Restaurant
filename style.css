@@ -1,6 +1,9 @@
 html,body{
     margin: 0px;
 }
+a{
+    text-decoration: none;
+}
 .landing{
     background-color: rgb(245, 46, 155);
     width: 100%;
@@ -16,26 +19,31 @@ html,body{
     border: solid 5px black;
     color: black;
     background:transparent;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 50px;
     font-weight: bold;
     padding: 2px;
     justify-self: center;
     align-self: center;
+    text-align: center;
+    padding: 5px;
 }
-.popup{
+#popup{
     background:transparent;
     width: 50px;
     padding: 10px;
     justify-self: end;
+    z-index: 1;
 }
 .header img{
     width:100%;
     height: auto;
 }
 .message{
-    padding-top: 200px;
+    padding-top: 180px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-size: 50px;
     display: grid;
     height: 200px;
@@ -53,3 +61,23 @@ html,body{
     font-size: 50px;
     justify-self: center;
 }
+#pop-window{
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    right: 0px;
+    text-align: center;
+    background-color: white;
+    margin-top: 0px;
+    margin-right: 0px;
+    height: 100%;
+    padding:150px 20px 20px 20px;
+}
+#pop-window li{
+    margin-top: 20px;
+}
+#pop-window li a{
+    color:black;
+    font-size: 40px;
+}
+
