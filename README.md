@@ -1,3 +1,3 @@
 # Restraunt
 Practising my html css skills
-https://developer-ishan.github.io/Restraunt/
+https://developer-ishan.github.io/Restaurant/
